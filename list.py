@@ -38,3 +38,11 @@ for i in range(len(nums)):
 nums = [2,3,4,5,6,7,8,9]
 for num in nums:
     print(f'{num}', end='') # -> 23456789 ЭЛЕМЕНТЫ !!!
+
+'СРАВНЕНИЕ'
+
+def is_contains (string, list_to_seach):
+    return string.upper() in [each_string.upper() for each_string in list_to_seach]
+# > False or True
+print(is_contains('Urban', ['ban', 'BaNaN', 'urBAN'])) # Urban ~ urBAN
+print(is_contains('cycle', ['recycling', 'cyclic'])) # No matches
